@@ -4,8 +4,17 @@
   "description": "My First Individual Project in Blockchain related in typescript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "npx solc --bin --abi --include-path node_modules/ --base-path . contracts/SimpleStorage.sol"
   },
   "author": "James Kim",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "ethers": "^6.3.0",
+    "fs-extra": "^11.1.1",
+    "solc": "^0.8.19"
+  }
 }
